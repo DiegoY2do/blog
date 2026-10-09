@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Lato:wght@400&family=Montserrat:wght@700;800&family=Permanent+Marker&display=swap');
+@import url("./components/header.css");
+@import url(./components/hero.css);
+@import url(./components/music.css);
+@import url(./components/albums.css);
+
+* {
+  margin: 0;
+  padding: 0px;
+}
+
+body{
+  background-color: #f8f8f8;
+  background-image: url("https://www.transparenttextures.com/patterns/concrete-wall-2.png");
+}
+
+a {
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.container{
+  width: 90%;
+  max-width: 1600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subtitle {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.subtitle h2 {
+    color: #830000;
+    font-family: 'Permanent Marker', cursive;
+    font-weight: 400;
+    font-size: clamp(1.125rem, 1.5vw, 2.375rem);
+}
+
+.subtitle h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 800;
+    font-size: clamp(1.5rem, 2.5vw, 2.2rem);
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+.subtitle p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: clamp(1rem, 1.2vw, 1.125rem);
+    line-height: 1.7;
+}
+
+a {
+    color:#830000;    
+    font-family: 'Permanent Marker', cursive;
+    font-weight: 500;
+    font-size: clamp(1.075rem, 1.5vw, 1.375rem);
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+a:hover  {
+  transform: translateX(15px);
+}
+
+span{
+    color: #830000;
+    font-family: 'Permanent Marker', cursive;
+    font-size: clamp(1.125rem, 1.5vw, 2.375rem);
+}

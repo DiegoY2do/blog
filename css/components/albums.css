@@ -1,0 +1,63 @@
+.albums {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.albums-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.albums-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.albums-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 45px 30px;
+    width: 100%;
+}
+
+.album-item {
+    min-width: 0;
+}
+
+.album-item img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    height: auto;
+    object-fit: cover;
+}
+
+.album-item h4 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 800;
+    font-size: clamp(0.8rem, 1.5vw, 1.2rem);
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+.album-item a {
+    color: #830000;
+    font-family: 'Permanent Marker', cursive;
+    font-size: clamp(1.125rem, 1.5vw, 1.375rem);
+    display: inline-block;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.album-item a:hover {
+    transform: translateX(8px);
+}
