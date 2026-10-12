@@ -1,0 +1,13 @@
+.parallax {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.parallax img {
+    width: 100%;
+    filter:opacity(100%);
+}
+

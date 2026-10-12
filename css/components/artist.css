@@ -1,0 +1,92 @@
+.artist {
+    width: 100%;
+    padding: 100px 0;
+    overflow: hidden;
+}
+
+.artist-gallery {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    overflow: hidden;
+}
+
+.artist-row {
+    width: 100%;
+    overflow: hidden;
+}
+
+.artist-track {
+    display: flex;
+    width: max-content;
+    will-change: transform;
+    animation-duration: 180s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.artist-track.move-left {
+    animation-name: moveLeft;
+}
+
+.artist-track.move-right {
+    animation-name: moveRight;
+}
+
+.artist-card {
+    flex: 0 0 180px;
+    margin-right: 12px;
+    overflow: hidden;
+    border-radius: 5px;
+    aspect-ratio: 1 / 1;
+}
+
+.artist-card img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Movimiento continuo */
+@keyframes moveLeft {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes moveRight {
+    from {
+        transform: translateX(-50%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@media (max-width: 600px) {
+    .artist-card {
+        flex-basis: 140px;
+        margin-right: 8px;
+    }
+
+    .artist-gallery {
+        gap: 8px;
+    }
+
+    .artist-track {
+        animation-duration: 150s;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .artist-track {
+        animation-play-state: paused;
+    }
+}

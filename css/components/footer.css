@@ -1,0 +1,126 @@
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0 30px;
+    background-color: #000;
+    color: #f8f8f8;
+}
+
+.footer-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.footer-main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    gap: 40px;
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+}
+
+.footer-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+/* Textos y títulos sobre fondo negro */
+.footer p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: clamp(1rem, 1.2vw, 1.125rem);
+    line-height: 1.7;
+}
+
+.footer span {
+    color: #e03a3a;
+}
+
+.footer-subtitle {
+    margin-top: 10px;
+}
+
+.footer-author {
+    font-size: clamp(1rem, 1.2vw, 1.125rem);
+}
+
+/* Enlaces: reemplazan el rojo oscuro global por un color legible */
+.footer a {
+    color: #f8f8f8;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: clamp(1rem, 1.2vw, 1.125rem);
+}
+
+.footer a:hover {
+    color: #e03a3a;
+}
+
+/* Redes sociales */
+.footer-rrss {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.footer-rrss a {
+    display: flex;
+}
+
+.footer-rrss a:hover {
+    transform: translateY(-4px);
+}
+
+/* Barra inferior */
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-top: 24px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-bottom p {
+    font-size: clamp(0.875rem, 1vw, 1rem);
+}
+
+.footer-bottom span{
+    font-size: clamp(0.875rem, 1vw, 1rem);
+}
+
+/* Tablet: marca arriba, menú y contacto abajo */
+@media (max-width: 900px) {
+    .footer-main {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-brand {
+        grid-column: 1 / -1;
+    }
+}
+
+/* Móvil: una columna */
+@media (max-width: 600px) {
+    .footer-main {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

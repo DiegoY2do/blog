@@ -9,6 +9,10 @@
   color: #000;
   box-sizing: border-box;
   position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  transition: background-color 0.4s ease;
 }
 
 .header nav {
@@ -26,6 +30,10 @@
   justify-content: center;
   flex-shrink: 0;
   font-family: 'Montserrat', sans-serif; font-weight: 800; text-transform: uppercase;
+}
+
+.header-panel {
+  display: contents;
 }
 
 .header .menu {
@@ -49,7 +57,7 @@
 .header .logo a,.header .menu a, .header .rrss a {
   display: flex;
   align-items: center;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, color 0.4s ease;
 }
 
 .header .logo a:hover, .header .menu a:hover , .rrss a:hover  {
@@ -69,4 +77,110 @@
 
 .header a:hover {
   color: #830000;
+}
+
+.header-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 22px;
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #000;
+  transition: color 0.4s ease;
+}
+
+.header-toggle span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: currentColor;
+  border-radius: 2px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.header.is-scrolled,
+.header.is-open {
+  background: #000;
+}
+
+.header.is-scrolled a,
+.header.is-open a,
+.header.is-scrolled .header-toggle,
+.header.is-open .header-toggle {
+  color: #fff;
+}
+
+.header.is-scrolled a:hover,
+.header.is-open a:hover {
+  color: #e03a3a;
+}
+
+@media (max-width: 1024px) {
+  .header {
+    padding: 1rem 1.25rem;
+  }
+
+  .header-toggle {
+    display: flex;
+  }
+
+  .header-panel {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100dvh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    padding: 30px 1.25rem 40px;
+    background: #000;
+    max-height: calc(100dvh - 80px);
+    overflow-y: auto;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s linear 0.3s;
+  }
+
+  .header.is-open .header-panel {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s;
+  }
+
+  .header .menu {
+    max-width: none;
+    flex: none;
+    flex-direction: column;
+    gap: 22px;
+  }
+
+  .header .header-panel a {
+    color: #fff;
+  }
+
+  .header .header-panel a:hover {
+    color: #e03a3a;
+  }
+
+  .header.is-open .header-toggle span:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+  }
+
+  .header.is-open .header-toggle span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .header.is-open .header-toggle span:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+  }
 }

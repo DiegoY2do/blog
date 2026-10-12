@@ -1,0 +1,112 @@
+.contact {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0 80px;
+}
+
+.contact-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    align-items: start;
+    gap: 60px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.contact-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.contact-block a{
+    color: #000;
+}
+
+.contact-form {
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 22px;
+}
+
+.contact-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.contact-field label {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+    font-size: clamp(1.125rem, 1.5vw, 1.5rem);
+    text-transform: uppercase;
+}
+
+.contact-form input:not([type="submit"]),
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    max-width: none;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 0;
+    background-color: #fff;
+    color: #000;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: clamp(1rem, 1.2vw, 1.125rem);
+    text-indent: 0;
+}
+
+.contact-form input:not([type="submit"]),
+.contact-form select {
+    height: 48px;
+    padding: 0 20px;
+}
+
+.contact-form textarea {
+    min-height: 160px;
+    padding: 14px 20px;
+    resize: vertical;
+}
+
+.contact-form :focus-visible {
+    outline: 2px solid #830000;
+    outline-offset: 2px;
+}
+
+.contact-form input[type="submit"] {
+    align-self: flex-start;
+}
+
+.contact-form input[type="submit"]:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.contact-status {
+    min-height: 1.7em;
+    font-family: 'Lato', sans-serif;
+    font-size: clamp(1rem, 1.2vw, 1.125rem);
+}
+
+.contact-status[data-state="error"] {
+    color: #830000;
+}
+
+@media (max-width: 900px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}

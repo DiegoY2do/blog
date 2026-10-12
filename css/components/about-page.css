@@ -1,0 +1,114 @@
+.about-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.about-section-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+/* Misión, visión y valores */
+.values-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.value-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.value-item h4 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+    font-size: clamp(1.25rem, 2vw, 2rem);
+    text-transform: uppercase;
+}
+
+.value-item p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: clamp(1rem, 1.2vw, 1.125rem);
+    line-height: 1.7;
+}
+
+/* Línea de tiempo */
+.timeline {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.timeline-item {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    align-items: start;
+    gap: 30px;
+    padding: 28px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.timeline-text {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.timeline-text h4 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+    font-size: clamp(1.25rem, 2vw, 2rem);
+    text-transform: uppercase;
+}
+
+.timeline-text p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: clamp(1rem, 1.2vw, 1.125rem);
+    line-height: 1.7;
+}
+
+/* Llamado a la acción */
+.about-cta {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    text-align: center;
+}
+
+.about-cta h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 800;
+    font-size: clamp(1.5rem, 2.5vw, 2.2rem);
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+@media (max-width: 900px) {
+    .values-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .timeline-item {
+        grid-template-columns: 90px 1fr;
+        gap: 16px;
+    }
+}

@@ -1,0 +1,73 @@
+.spotlight {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0px;
+}
+
+.spotlight-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.spotlight-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.spotlight-card {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.spotlight-img {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.spotlight-img img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.spotlight-card h4 {
+    color:#830000;    
+    font-family: 'Permanent Marker', cursive;
+    font-weight: 500;
+    font-size: clamp(1.125rem, 1.5vw, 2.375rem);
+}
+
+.spotlight-card p {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 800;
+    font-size: clamp(1.3rem, 2.3vw, 2.1rem);
+    line-height: 1.7;
+}
+
+/* Tablet: 2 por fila */
+@media (max-width: 900px) {
+    .spotlight-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Móvil: 1 por fila */
+@media (max-width: 600px) {
+    .spotlight-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+}
