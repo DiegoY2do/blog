@@ -1,8 +1,8 @@
 export function renderAbout() {
     const stats = [
-        { number: "00", label: "Conciertos" },
-        { number: "00", label: "Artistas" },
-        { number: "00", label: "Años de historia" }
+        { number: "30", label: "Conciertos" },
+        { number: "345", label: "Artistas" },
+        { number: "4", label: "Años de historia" }
     ];
 
     return `

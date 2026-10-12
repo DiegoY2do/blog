@@ -1,9 +1,9 @@
 export function renderFooter(base = "") {
     const menu = [
-        { label: "Inicio", href: `${base}#home` },
-        { label: "Música", href: `${base}#music` },
+        { label: "Inicio", href: `${base}#hero` },
+        { label: "Noticias", href: `${base}#music` },
         { label: "Álbumes", href: `${base}#albums` },
-        { label: "Artistas", href: `${base}#artists` },
+        { label: "Artistas", href: `${base}#spotlight` },
         { label: "Conciertos", href: `${base}#concerts` },
         { label: "Acerca de", href: "./about.html" },
         { label: "Contacto", href: "./contact.html" }

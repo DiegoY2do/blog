@@ -4,7 +4,7 @@ export function renderHeader(base = "")  {
       <nav>
 
         <div class="logo">
-          <a href="${base}#home">
+          <a href="${base}#hero">
             <h2>ECO CLUB</h2>
           </a>
         </div>
@@ -23,12 +23,12 @@ export function renderHeader(base = "")  {
 
         <div class="header-panel" id="header-panel">
           <div class="menu">
-            <a href="${base}#home">Inicio</a>
-            <a href="${base}#music">Música</a>
+            <a href="${base}#hero">Inicio</a>
+            <a href="${base}#music">Noticias</a>
             <a href="${base}#albums">Álbumes</a>
-            <a href="${base}#artists">Artistas</a>
+            <a href="${base}#spotlight">Artistas</a>
             <a href="${base}#concerts">Conciertos</a>
-            <a href="./about.html">Acerca de</a>
+            <a href="${base}#about">Acerca de</a>
             <a href="./contact.html">Contacto</a>
           </div>
 

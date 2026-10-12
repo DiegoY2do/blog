@@ -11,10 +11,10 @@ export function renderHero() {
             <br>
             <h2>La música no tiene límites.</h2>
             <br>
-            <p>Descubre nuevos sonidos, artistas que dejan huella, álbumes que cuentan historias y <br>las tendencias que mueven la cultura musical.</p>
+            <p>Revive los recuerdos, siente el ritmo y déjate llevar por los sonidos de <br><span> DeBÍ TiRAR MáS FOToS.</span></p>
             <br>
             <hr>
-            <a href="">EXPLORE THE SOUND &nbsp; →</a>
+            <a target="_blank" href="https://open.spotify.com/playlist/3S3cySwNzbTNxKIgeTXHfK">EXPLORE THE SOUND &nbsp; →</a>
         </div>
       </div>
     </section>
