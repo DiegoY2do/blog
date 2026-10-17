@@ -1,28 +1,1042 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>ECO CLUB</title>
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <link rel="stylesheet" href="css/style.css">
-  <title>ECO CLUB</title>
-</head>
+  <body>
+    <header class="header">
+      <nav>
+        <div class="logo">
+          <a href="./#hero">
+            <h2>ECO CLUB</h2>
+          </a>
+        </div>
 
-<body>
-  <div id="header"></div>
-  <main>
-    <div id="hero"></div>
-    <div id="music"></div>
-    <div id="albums"></div>
-    <div id="parallax"></div>
-    <div id="spotlight"></div>
-    <div id="concerts"></div>
-    <div id="artist"></div>
-    <div id="about"></div>
-    <div id="newsletter"></div>
-  </main>
-  <div id="footer"></div>
-  <script type="module" src="js/script.js"></script>
-</body>
+        <button
+          class="header-toggle"
+          type="button"
+          aria-label="Abrir menú"
+          aria-expanded="false"
+          aria-controls="header-panel"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
 
+        <div class="header-panel" id="header-panel">
+          <div class="menu">
+            <a href="./#hero">Inicio</a>
+            <a href="./#music">Noticias</a>
+            <a href="./#albums">Álbumes</a>
+            <a href="./#spotlight">Artistas</a>
+            <a href="./#concerts">Conciertos</a>
+            <a href="./#about">Acerca de</a>
+            <a href="./contact.html">Contacto</a>
+          </div>
+
+          <div class="rrss">
+            <!-- Instagram -->
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="3" y="3" width="18" height="18" rx="5" />
+                <circle cx="12" cy="12" r="4" />
+                <circle
+                  cx="17.5"
+                  cy="6.5"
+                  r=".8"
+                  fill="currentColor"
+                  stroke="none"
+                />
+              </svg>
+            </a>
+
+            <!-- Facebook -->
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M13.5 21v-8h2.7l.4-3h-3.1V8.1c0-.9.3-1.5 1.6-1.5h1.6V3.9c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3V10H7.2v3h2.8v8h3.5z"
+                />
+              </svg>
+            </a>
+
+            <!-- Spotify -->
+            <a
+              href="https://open.spotify.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Spotify"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="28"
+                height="28"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zm5.503 17.303a.748.748 0 0 1-1.03.248c-2.822-1.725-6.375-2.11-10.56-1.156a.75.75 0 0 1-.334-1.463c4.583-1.046 8.514-.615 11.676 1.341a.75.75 0 0 1 .248 1.03zm1.47-3.27a.937.937 0 0 1-1.289.309c-3.23-1.986-8.155-2.56-11.977-1.4a.938.938 0 0 1-.545-1.794c4.365-1.323 9.786-.683 13.502 1.596a.938.938 0 0 1 .309 1.289zm.126-3.404C15.224 8.375 8.796 8.164 5.067 9.296a1.125 1.125 0 0 1-.653-2.153c4.28-1.3 11.396-1.049 15.893 1.62a1.125 1.125 0 0 1-1.208 1.866z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero" id="hero">
+        <div class="hero row g-0 align-items-center">
+          <div class="hero-img col-12 col-md-6 order-2 order-md-1">
+            <img src="assets/image/concho.png" alt="concho" class="img-fluid" />
+          </div>
+
+          <div class="hero-text col-12 col-md-6 order-1 order-md-2 px-4">
+            <h1>
+              FEEL THE <br />
+              RHYTHM
+            </h1>
+            <br />
+            <h2>La música no tiene límites.</h2>
+            <br />
+            <p>
+              Revive los recuerdos, siente el ritmo y déjate llevar por los
+              sonidos de <br /><span> DeBÍ TiRAR MáS FOToS.</span>
+            </p>
+            <br />
+            <hr />
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://open.spotify.com/playlist/3S3cySwNzbTNxKIgeTXHfK"
+              >EXPLORE THE SOUND &nbsp; →</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- MUSIC -->
+      <section class="music" id="music">
+        <div class="container">
+          <div class="music-container">
+            <div class="subtitle">
+              <h2>EL SONIDO DEL MOMENTO.</h2>
+              <br />
+              <h3>El rap mexa toma el Pepsi Center.</h3>
+              <p></p>
+            </div>
+
+            <div class="music-content">
+              <div class="music-item row g-0 align-items-center">
+                <div
+                  class="img-item col-12 col-md-6 order-2 order-md-1 mt-4 mt-md-0"
+                >
+                  <img
+                    src="./assets/image/rv.png"
+                    alt="Rich Vago$ Fest"
+                    class="img-fluid"
+                  />
+                </div>
+
+                <div
+                  class="text-item col-12 col-md-6 order-1 order-md-2 px-md-4"
+                >
+                  <h2><span>RICH VAGO$</span> FEST REGRESA.</h2>
+                  <br />
+                  <p>
+                    Después de su primera edición, el
+                    <span>Rich Vago$</span> Fest regresa el 28 de noviembre al
+                    Pepsi Center de la Ciudad de México con una propuesta que
+                    busca seguir impulsando la escena del rap mexicano.
+                    Encabezado por <span>Gera MX</span>, el cartel también reúne
+                    a Opyi, La Potter y King Zoo, combinando diferentes estilos
+                    e influencias de la música urbana.
+                  </p>
+                  <br />
+                  <p>
+                    La nueva edición llega en una etapa importante para
+                    <span>Gera MX</span>, quien presenta
+                    <span>X Amor al Arte</span>, un álbum de 12 canciones con
+                    una faceta más íntima y colaboraciones con artistas como
+                    Natalia Jiménez, Christian Nodal y Nanpa Básico.
+                    <br /><br />Con este regreso, <span>Rich Vago$</span>
+                    apuesta por una experiencia que celebra la evolución del rap
+                    nacional y el crecimiento de una escena que continúa ganando
+                    terreno.
+                  </p>
+                  <br />
+                  <a
+                    href="https://www.ticketmaster.com.mx/gera-mx-mexico-28-11-2026/event/14006538AE0FA0EC"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >COMPRAR BOLETOS&nbsp; →</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ALBUMS -->
+      <section class="albums" id="albums">
+        <div class="container">
+          <div class="albums-container">
+            <div class="subtitle">
+              <h2>ÁLBUMES QUE DEJAN HUELLA.</h2>
+              <br />
+              <h3>Historias que se escuchan</h3>
+              <p>
+                Explora discos, descubre nuevas propuestas y revive álbumes que
+                han marcado la música.<br />
+                Cada portada tiene una historia que contar.
+              </p>
+            </div>
+
+            <div class="albums-content">
+              <div
+                class="albums-grid row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4"
+              >
+                <article class="album-item col">
+                  <img
+                    src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_global_default.jpg"
+                    alt="Top Global de Spotify"
+                  />
+                  <br /><br />
+                  <h4>Top Global</h4>
+                  <a
+                    href="https://open.spotify.com/playlist/37i9dQZEVXbMDoHDwVN2tF"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >DESCUBRIR&nbsp; →</a
+                  >
+                </article>
+
+                <article class="album-item col">
+                  <img
+                    src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_mx_default.jpg"
+                    alt="Top México de Spotify"
+                  />
+                  <br /><br />
+                  <h4>Top México</h4>
+                  <a
+                    href="https://open.spotify.com/playlist/37i9dQZEVXbO3qyFxbkOE1"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >DESCUBRIR&nbsp; →</a
+                  >
+                </article>
+
+                <article class="album-item col">
+                  <img
+                    src="https://i.scdn.co/image/ab67616d0000b27349d694203245f241a1bcaa72"
+                    alt="Portada del álbum Un Verano Sin Ti"
+                  />
+                  <br /><br />
+                  <h4>Un Verano Sin Ti</h4>
+                  <a
+                    href="https://open.spotify.com/intl-es/album/3RQQmkQEvNCY4prGKE6oc5"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >DESCUBRIR&nbsp; →</a
+                  >
+                </article>
+
+                <article class="album-item col">
+                  <img
+                    src="https://i.scdn.co/image/ab67616d0000b2735f1f51d14e8bea89484ecd1b"
+                    alt="Portada del álbum Meteora"
+                  />
+                  <br /><br />
+                  <h4>Meteora</h4>
+                  <a
+                    href="https://open.spotify.com/intl-es/album/4Gfnly5CzMJQqkUFfoHaP3"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >DESCUBRIR&nbsp; →</a
+                  >
+                </article>
+
+                <article class="album-item col">
+                  <img
+                    src="https://i.scdn.co/image/ab67616d0000b273633a2d775747bccfbcb17a45"
+                    alt="Portada del álbum Nine Track Mind"
+                  />
+                  <br /><br />
+                  <h4>Nine Track Mind</h4>
+                  <a
+                    href="https://open.spotify.com/intl-es/album/5Nwsra93UQYJ6xxcjcE10x"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >DESCUBRIR&nbsp; →</a
+                  >
+                </article>
+
+                <article class="album-item col">
+                  <img
+                    src="https://i.scdn.co/image/ab67616d0000b2732ccc327ed424f1f4b46d7aeb"
+                    alt="Portada de Legends Never Die"
+                  />
+                  <br /><br />
+                  <h4>Legends Never Die</h4>
+                  <a
+                    href="https://open.spotify.com/intl-es/track/04pjfS3YIK6gXjxi1zHeZa"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >DESCUBRIR&nbsp; →</a
+                  >
+                </article>
+
+                <article class="album-item col">
+                  <img
+                    src="https://i.scdn.co/image/ab67616d0000b273401bf6103d4b7f5230a21582"
+                    alt="Portada del álbum So Good"
+                  />
+                  <br /><br />
+                  <h4>So Good</h4>
+                  <a
+                    href="https://open.spotify.com/intl-es/album/5YLRVHDVRw3QqWbeTGpC5B"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >DESCUBRIR&nbsp; →</a
+                  >
+                </article>
+
+                <article class="album-item col">
+                  <img
+                    src="https://i.scdn.co/image/ab67616d00001e02cf3de6b538d8b1ed73a4d5d1"
+                    alt="Portada del álbum The Life Of"
+                  />
+                  <br /><br />
+                  <h4>The Life Of</h4>
+                  <a
+                    href="https://open.spotify.com/album/4hF2gTGuPYlykYuphDxi8J"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >DESCUBRIR&nbsp; →</a
+                  >
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PARALLAX -->
+      <section class="parallax">
+        <img src="./assets/image/ripperbg.png" alt="" />
+      </section>
+
+      <!-- SPOTLIGHT -->
+      <section class="spotlight" id="spotlight">
+        <div class="container">
+          <div class="spotlight-container">
+            <div class="subtitle">
+              <h2>Las voces que están marcando la escena.</h2>
+              <br />
+              <h3>Los artistas del momento</h3>
+              <p></p>
+            </div>
+
+            <div class="spotlight-grid row row-cols-2 row-cols-lg-4 g-4">
+              <!-- Taylor Swift -->
+              <div class="col">
+                <article
+                  class="spotlight-card card h-100 border-0 bg-transparent"
+                >
+                  <div class="spotlight-img">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Taylor_Swift_at_the_2023_MTV_Video_Music_Awards_4.png?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=original"
+                      alt="Taylor Swift"
+                      loading="lazy"
+                      class="card-img-top"
+                    />
+                  </div>
+                  <div class="card-body px-0">
+                    <h4 class="card-title">Taylor Swift</h4>
+                    <p class="card-text">Pop</p>
+                    <a
+                      href="https://open.spotify.com/playlist/37i9dQZF1DX5KpP2LN299J"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Escúchalo &nbsp; →</a
+                    >
+                  </div>
+                </article>
+              </div>
+
+              <!-- Bad Bunny -->
+              <div class="col">
+                <article
+                  class="spotlight-card card h-100 border-0 bg-transparent"
+                >
+                  <div class="spotlight-img">
+                    <img
+                      src="https://imagenes.elpais.com/resizer/v2/U52QPYUXUZGKDKTFPGSJ7YB5RQ.jpg?auth=1b8b45bd464d922b4b1b9a0881142fd1e9dc605a693f440689f95e2cfa314d95&width=414"
+                      alt="Bad Bunny"
+                      loading="lazy"
+                      class="card-img-top"
+                    />
+                  </div>
+                  <div class="card-body px-0">
+                    <h4 class="card-title">Bad Bunny</h4>
+                    <p class="card-text">Reguetón</p>
+                    <a
+                      href="https://open.spotify.com/playlist/37i9dQZF1DX2apWzyECwyZ"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Escúchalo &nbsp; →</a
+                    >
+                  </div>
+                </article>
+              </div>
+
+              <!-- Drake -->
+              <div class="col">
+                <article
+                  class="spotlight-card card h-100 border-0 bg-transparent"
+                >
+                  <div class="spotlight-img">
+                    <img
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTD_sDWPj7ZnIXNQFqYEove0QhKrHTyhZ8myCKfuB-zQ&s=10"
+                      alt="Drake"
+                      loading="lazy"
+                      class="card-img-top"
+                    />
+                  </div>
+                  <div class="card-body px-0">
+                    <h4 class="card-title">Drake</h4>
+                    <p class="card-text">Hip-hop</p>
+                    <a
+                      href="https://open.spotify.com/playlist/37i9dQZF1DX7QOv5kjbU68"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Escúchalo &nbsp; →</a
+                    >
+                  </div>
+                </article>
+              </div>
+
+              <!-- The Weeknd -->
+              <div class="col">
+                <article
+                  class="spotlight-card card h-100 border-0 bg-transparent"
+                >
+                  <div class="spotlight-img">
+                    <img
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx_rxpTvziCNPP8xweW0mLtGizjT8i3GDNrj1un-otJA&s=10"
+                      alt="The Weeknd"
+                      loading="lazy"
+                      class="card-img-top"
+                    />
+                  </div>
+                  <div class="card-body px-0">
+                    <h4 class="card-title">The Weeknd</h4>
+                    <p class="card-text">R&amp;B alternativo</p>
+                    <a
+                      href="https://open.spotify.com/playlist/37i9dQZF1DX6bnzK9KPvrz"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Escúchalo &nbsp; →</a
+                    >
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONCERTS -->
+      <section class="concerts" id="concerts">
+        <div class="container">
+          <div class="concerts-container">
+            <div class="subtitle">
+              <h2>PRÓXIMOS CONCIERTOS.</h2>
+              <br />
+              <h3>Aparta tu lugar en la siguiente fecha.</h3>
+              <p></p>
+            </div>
+
+            <div class="concerts-list w-100 border-top">
+              <!-- Corona Capital -->
+              <div
+                class="concert-item row g-0 align-items-center py-4 border-bottom"
+              >
+                <div
+                  class="concert-date col-auto d-flex flex-column align-items-center"
+                >
+                  <h4>20</h4>
+                  <span>NOV</span>
+                </div>
+                <div class="concert-info col px-3 px-md-4 d-flex flex-column">
+                  <h4>Corona Capital</h4>
+                  <p>Autódromo Hermanos Rodríguez · Ciudad de México</p>
+                </div>
+                <div class="concert-link col-12 col-md-auto mt-2 mt-md-0">
+                  <a
+                    href="https://www.coronacapital.com.mx/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >BOLETOS&nbsp; →</a
+                  >
+                </div>
+              </div>
+
+              <!-- Rich Vago$ Fest -->
+              <div
+                class="concert-item row g-0 align-items-center py-4 border-bottom"
+              >
+                <div
+                  class="concert-date col-auto d-flex flex-column align-items-center"
+                >
+                  <h4>28</h4>
+                  <span>NOV</span>
+                </div>
+                <div class="concert-info col px-3 px-md-4 d-flex flex-column">
+                  <h4>Rich Vago$ Fest</h4>
+                  <p>Pepsi Center · Ciudad de México</p>
+                </div>
+                <div class="concert-link col-12 col-md-auto mt-2 mt-md-0">
+                  <a
+                    href="https://www.ticketmaster.com.mx/gera-mx-mexico-28-11-2026/event/14006538AE0FA0EC"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >BOLETOS&nbsp; →</a
+                  >
+                </div>
+              </div>
+
+              <!-- Coca-Cola Flow Fest -->
+              <div
+                class="concert-item row g-0 align-items-center py-4 border-bottom"
+              >
+                <div
+                  class="concert-date col-auto d-flex flex-column align-items-center"
+                >
+                  <h4>28</h4>
+                  <span>NOV</span>
+                </div>
+                <div class="concert-info col px-3 px-md-4 d-flex flex-column">
+                  <h4>Coca-Cola Flow Fest</h4>
+                  <p>Autódromo Hermanos Rodríguez · Ciudad de México</p>
+                </div>
+                <div class="concert-link col-12 col-md-auto mt-2 mt-md-0">
+                  <a
+                    href="https://www.cocacolaflowfest.com.mx/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >BOLETOS&nbsp; →</a
+                  >
+                </div>
+              </div>
+
+              <!-- Conciertos extra (collapse de Bootstrap) -->
+              <div class="collapse" id="concerts-extra">
+                <!-- Knotfest México -->
+                <div
+                  class="concert-item row g-0 align-items-center py-4 border-bottom"
+                >
+                  <div
+                    class="concert-date col-auto d-flex flex-column align-items-center"
+                  >
+                    <h4>05</h4>
+                    <span>DIC</span>
+                  </div>
+                  <div class="concert-info col px-3 px-md-4 d-flex flex-column">
+                    <h4>Knotfest México</h4>
+                    <p>Estadio Fray Nano · Ciudad de México</p>
+                  </div>
+                  <div class="concert-link col-12 col-md-auto mt-2 mt-md-0">
+                    <a
+                      href="https://knotfest.com/pages/mexico"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >BOLETOS&nbsp; →</a
+                    >
+                  </div>
+                </div>
+
+                <!-- Strings & Sol 2026 -->
+                <div
+                  class="concert-item row g-0 align-items-center py-4 border-bottom"
+                >
+                  <div
+                    class="concert-date col-auto d-flex flex-column align-items-center"
+                  >
+                    <h4>09</h4>
+                    <span>DIC</span>
+                  </div>
+                  <div class="concert-info col px-3 px-md-4 d-flex flex-column">
+                    <h4>Strings &amp; Sol 2026</h4>
+                    <p>
+                      Dreams Sapphire Resort &amp; Spa Puerto Morelos, Mexico
+                    </p>
+                  </div>
+                  <div class="concert-link col-12 col-md-auto mt-2 mt-md-0">
+                    <a
+                      href="https://stringsandsol.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >BOLETOS&nbsp; →</a
+                    >
+                  </div>
+                </div>
+
+                <!-- Maná -->
+                <div
+                  class="concert-item row g-0 align-items-center py-4 border-bottom"
+                >
+                  <div
+                    class="concert-date col-auto d-flex flex-column align-items-center"
+                  >
+                    <h4>16</h4>
+                    <span>DIC</span>
+                  </div>
+                  <div class="concert-info col px-3 px-md-4 d-flex flex-column">
+                    <h4>Maná</h4>
+                    <p>Estadio GNP Seguros · Ciudad de México</p>
+                  </div>
+                  <div class="concert-link col-12 col-md-auto mt-2 mt-md-0">
+                    <a
+                      href="https://www.ticketmaster.com.mx/mana-boletos/artist/759223"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >BOLETOS&nbsp; →</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button
+              class="concerts-toggle btn"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#concerts-extra"
+              aria-expanded="false"
+              aria-controls="concerts-extra"
+            >
+              MOSTRAR MÁS ↓
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ARTIST (marquee) -->
+      <section class="artist">
+        <div class="artist-gallery">
+          <!-- Fila 1 -->
+          <div class="artist-row row-one">
+            <div class="artist-track move-left">
+              <div class="artist-card">
+                <img
+                  src="https://i.scdn.co/image/ab67616d0000b27349d694203245f241a1bcaa72"
+                  alt="Un Verano Sin Ti"
+                  loading="lazy"
+                />
+              </div>
+              <div class="artist-card">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn1CJ-FWbFGzZvzURIMnWYNEbSIcUvw1GWAw65Hte-2Q&s=10"
+                  alt="SOUR"
+                  loading="lazy"
+                />
+              </div>
+              <div class="artist-card">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsYClTYB-WUxh198Gfgx78aX_WgbDN3Eak7vN_IJzHYw&s=10"
+                  alt="Hollywood's Bleeding"
+                  loading="lazy"
+                />
+              </div>
+              <div class="artist-card">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlxYZGVX9KTJj4h4UgyGi_umL5Wc_cY2KjoXvUvCtiMQ&s"
+                  alt="Lover"
+                  loading="lazy"
+                />
+              </div>
+              <div class="artist-card">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1o8T-bu1kWDmaIK-UHSpYj_ONTEQ1-6NhgGl6DLS_7Q&s=10"
+                  alt="Beerbongs &amp; Bentleys"
+                  loading="lazy"
+                />
+              </div>
+              <div class="artist-card">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa9azrrfFe6_zivEFYBjnHmDPM_gjjSE3fiUrsxuWWEQ&s=10"
+                  alt="Beauty Behind the Madness"
+                  loading="lazy"
+                />
+              </div>
+              <div class="artist-card">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvEZLh-z3LLLjhbkK3xnRWIVkDRQCZrYB89Ufu5pEpsQ&s"
+                  alt="Midnights"
+                  loading="lazy"
+                />
+              </div>
+              <div class="artist-card">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQYJyUxP1WmKk1t8QDzCStDoVuYdmRxPLnMbfrRhXgRw&s=10"
+                  alt="Doo-Wops &amp; Hooligan"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Fila 2 -->
+          <div class="artist-row row-two">
+            <div class="artist-track move-right">
+              <div class="artist-card">
+                <img
+                  src="https://i.scdn.co/image/ab67616d0000b2734718e2b124f79258be7bc452"
+                  alt="Starboy"
+                  loading="lazy"
+                />
+              </div>
+              <div class="artist-card">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRncyZTS63oegy_31kUvzZ-v8-6fiuIPIKpGDlZQms6Yg&s=10"
+                  alt="SOS"
+                  loading="lazy"
+                />
+              </div>
+              <div class="artist-card">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSryVD6dnkV2FoljafPHPdzdZdYpGM02-o_zkJyeDsF2A&s"
+                  alt="Future Nostalgia"
+                  loading="lazy"
+                />
+              </div>
+              <div class="artist-card">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJJFuyKQ9VK02y5ulDnhR8cHutWUnkiNqdstwNAVeJCQ&s=10"
+                  alt="AM"
+                  loading="lazy"
+                />
+              </div>
+              <div class="artist-card">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhY0Aa7kHbjMyuNeVm-3Mjg7-aO4oS-w3SkIhrYyCv1Q&s=10"
+                  alt="?"
+                  loading="lazy"
+                />
+              </div>
+              <div class="artist-card">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ1QW_Zbd6WHu5BhfoZPPSbadT0kHZT_prT-Kwzx-RaA&s"
+                  alt="YHLQMDLG"
+                  loading="lazy"
+                />
+              </div>
+              <div class="artist-card">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHIr-mQXPZfUYFs5p-4Fj7TeRretIDQUxje_905DIioA&s"
+                  alt="Scorpion"
+                  loading="lazy"
+                />
+              </div>
+              <div class="artist-card">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnYMW0lKK5i0ExeLGQJRuayvYDfENAtXmB_4ETbV2BMg&s"
+                  alt="GUTS"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Fila 3 -->
+          <div class="artist-row row-three">
+            <div class="artist-track move-left">
+              <div class="artist-card">
+                <img
+                  src="https://i.scdn.co/image/ab67616d0000b273ba5db46f4b838ef6027e6f96"
+                  alt="÷ (Divide)"
+                  loading="lazy"
+                />
+              </div>
+              <div class="artist-card">
+                <img
+                  src="https://i.scdn.co/image/ab67616d0000b2738863bc11d2aa12b54f5aeb36"
+                  alt="After Hours"
+                  loading="lazy"
+                />
+              </div>
+              <div class="artist-card">
+                <img
+                  src="https://i.scdn.co/image/ab6761610000e5eb0c68f6c95232e716f0abee8d"
+                  alt="Dua Lipa"
+                  loading="lazy"
+                />
+              </div>
+              <div class="artist-card">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKm4c94W4R89B947HHhL4CCqycCwbfgDYFL4uGWhpv_Q&s"
+                  alt="WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?"
+                  loading="lazy"
+                />
+              </div>
+              <div class="artist-card">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkd4sLmOzWZ-MHbQzq4iuRRrCaDrsJRMhgQJB0oExVXg&s=10"
+                  alt="Purpose"
+                  loading="lazy"
+                />
+              </div>
+              <div class="artist-card">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLKJ0crs1AdgC2BEdB5LZWr6pqFZDizq7fSj0iffaV5g&s=10"
+                  alt="Mañana Será Bonito"
+                  loading="lazy"
+                />
+              </div>
+              <div class="artist-card">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh7akwlXCYx9d5vC5ZJqecROCXS6BrxyjgBC-FegxVKA&s"
+                  alt="Views"
+                  loading="lazy"
+                />
+              </div>
+              <div class="artist-card">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlVgzHIcYaMV54O1ke7eFTMaxydznKgun2cFoqRsgTVg&s"
+                  alt="nadie sabe lo que va a pasar mañana"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section class="about" id="about">
+        <div class="container">
+          <div class="about-container">
+            <div class="subtitle">
+              <h2>SOBRE NOSOTROS.</h2>
+              <br />
+              <h3>Una plataforma hecha para la escena.</h3>
+              <p></p>
+            </div>
+
+            <div class="about-content row align-items-center">
+              <div class="about-text col-12 col-lg-7">
+                <p>
+                  Soy una persona que encuentra inspiración en la música, el
+                  diseño y todo aquello que transmite una idea o una emoción. Me
+                  gusta explorar nuevas perspectivas, descubrir sonidos y
+                  transformar lo que me apasiona en algo visual y auténtico.
+                  Creo que los pequeños detalles pueden contar grandes historias
+                  y que cada proyecto es una oportunidad para expresar una parte
+                  de quién soy.
+                </p>
+                <br />
+                <p>
+                  <span>ECO CLUB</span> nace de esa conexión entre creatividad,
+                  música y cultura. Más que un espacio para compartir gustos, es
+                  una forma de reunir ideas, sonidos e influencias que forman
+                  parte de mi mundo. Este es solo el comienzo de algo que
+                  seguirá creciendo, evolucionando y encontrando nuevas formas
+                  de expresarse.
+                </p>
+                <br />
+                <a href="./about.html">CONOCE MÁS&nbsp; →</a>
+              </div>
+
+              <div class="about-stats col-12 col-lg-5">
+                <div class="about-stat">
+                  <h4>30</h4>
+                  <p>Conciertos</p>
+                </div>
+                <div class="about-stat">
+                  <h4>345</h4>
+                  <p>Artistas</p>
+                </div>
+                <div class="about-stat">
+                  <h4>4</h4>
+                  <p>Años de historia</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- NEWSLETTER -->
+      <section class="newsletter">
+        <div class="container">
+            
+            <div class="news">
+                <p>Suscríbete a nuestro <span>newsletter.</span></p>
+                <div class="form">
+                    <form action="" id="newsletterForm">
+                        <input
+                        type="email"
+                        name="email"
+                        id="newsletterEmail"
+                        required
+                        />
+                        <input type="submit" value="Suscribirse" />
+                    </form>
+                </div>
+            </div>
+            <div id="liveAlertPlaceholder"></div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-container">
+          <div class="footer-main">
+            <div class="footer-col footer-brand">
+              <span>ECO CLUB</span>
+              <p>La plataforma para vivir la música de la escena.</p>
+
+              <span class="footer-subtitle">SÍGUENOS</span>
+              <div class="footer-rrss">
+                <a
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="28"
+                    height="28"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <rect x="3" y="3" width="18" height="18" rx="5" />
+                    <circle cx="12" cy="12" r="4" />
+                    <circle
+                      cx="17.5"
+                      cy="6.5"
+                      r=".8"
+                      fill="currentColor"
+                      stroke="none"
+                    />
+                  </svg>
+                </a>
+
+                <a
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Facebook"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="28"
+                    height="28"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M13.5 21v-8h2.7l.4-3h-3.1V8.1c0-.9.3-1.5 1.6-1.5h1.6V3.9c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3V10H7.2v3h2.8v8h3.5z"
+                    />
+                  </svg>
+                </a>
+
+                <a
+                  href="https://open.spotify.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Spotify"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="28"
+                    height="28"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zm5.503 17.303a.748.748 0 0 1-1.03.248c-2.822-1.725-6.375-2.11-10.56-1.156a.75.75 0 0 1-.334-1.463c4.583-1.046 8.514-.615 11.676 1.341a.75.75 0 0 1 .248 1.03zm1.47-3.27a.937.937 0 0 1-1.289.309c-3.23-1.986-8.155-2.56-11.977-1.4a.938.938 0 0 1-.545-1.794c4.365-1.323 9.786-.683 13.502 1.596a.938.938 0 0 1 .309 1.289zm.126-3.404C15.224 8.375 8.796 8.164 5.067 9.296a1.125 1.125 0 0 1-.653-2.153c4.28-1.3 11.396-1.049 15.893 1.62a1.125 1.125 0 0 1-1.208 1.866z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="footer-col">
+              <span>MENÚ</span>
+              <nav class="footer-menu">
+                <a href="./#hero">Inicio</a>
+                <a href="./#music">Noticias</a>
+                <a href="./#albums">Álbumes</a>
+                <a href="./#spotlight">Artistas</a>
+                <a href="./#concerts">Conciertos</a>
+                <a href="./about.html">Acerca de</a>
+                <a href="./contact.html">Contacto</a>
+              </nav>
+            </div>
+
+            <div class="footer-col">
+              <span>CONTACTO</span>
+              <a href="mailto:contacto@arixv.com.mx">contacto@arixv.com.mx</a>
+            </div>
+          </div>
+
+          <div class="footer-bottom">
+            <p>
+              © &nbsp;<span id="footer-year">2026</span>&nbsp;
+              <span>Eco Club.</span> Todos los derechos reservados.
+            </p>
+            <p>Autor: <span class="footer-author">&nbsp;Diego Segundo</span></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>

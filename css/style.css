@@ -29,6 +29,10 @@ body{
   background-image: url("https://www.transparenttextures.com/patterns/concrete-wall-2.png");
 }
 
+main{
+  overflow: hidden;
+}
+
 a {
   text-decoration: none;
   white-space: nowrap;
@@ -40,6 +44,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .subtitle {
@@ -90,3 +95,4 @@ span{
     font-family: 'Permanent Marker', cursive;
     font-size: clamp(1.125rem, 1.5vw, 2.375rem);
 }
+

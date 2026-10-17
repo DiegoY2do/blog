@@ -31,7 +31,6 @@
 }
 
 .img-item{
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,7 +42,6 @@
 }
 
 .text-item{
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: start;
@@ -68,6 +66,7 @@
     line-height: 1.7;
 }
 
-.text-item span{ 
+.text-item p > span{ 
     font-size: clamp(1rem, 1.2vw, 1.125rem);
+    font-family: 'Montserrat', sans-serif;
 }

@@ -36,7 +36,6 @@
     gap: 10px;
 }
 
-/* Textos y títulos sobre fondo negro */
 .footer p {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
@@ -46,6 +45,7 @@
 
 .footer span {
     color: #e03a3a;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .footer-subtitle {
@@ -56,7 +56,6 @@
     font-size: clamp(1rem, 1.2vw, 1.125rem);
 }
 
-/* Enlaces: reemplazan el rojo oscuro global por un color legible */
 .footer a {
     color: #f8f8f8;
     font-family: 'Lato', sans-serif;
@@ -68,7 +67,6 @@
     color: #e03a3a;
 }
 
-/* Redes sociales */
 .footer-rrss {
     display: flex;
     align-items: center;
@@ -83,7 +81,6 @@
     transform: translateY(-4px);
 }
 
-/* Barra inferior */
 .footer-bottom {
     display: flex;
     justify-content: space-between;
@@ -102,7 +99,6 @@
     font-size: clamp(0.875rem, 1vw, 1rem);
 }
 
-/* Tablet: marca arriba, menú y contacto abajo */
 @media (max-width: 900px) {
     .footer-main {
         grid-template-columns: 1fr 1fr;
@@ -113,7 +109,6 @@
     }
 }
 
-/* Móvil: una columna */
 @media (max-width: 600px) {
     .footer-main {
         grid-template-columns: 1fr;

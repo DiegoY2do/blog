@@ -4,6 +4,7 @@
     justify-content: center;
     align-items: center;
     padding: 50px 0;
+    overflow-x: hidden;
 }
 
 .about-section-container {
@@ -13,12 +14,8 @@
     gap: 50px;
 }
 
-/* Misión, visión y valores */
 .values-grid {
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
 }
 
 .value-item {
@@ -31,6 +28,7 @@
 }
 
 .value-item h4 {
+    margin: 0;
     font-family: 'Cormorant Garamond', serif;
     font-weight: 600;
     font-size: clamp(1.25rem, 2vw, 2rem);
@@ -38,13 +36,13 @@
 }
 
 .value-item p {
+    margin: 0;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     font-size: clamp(1rem, 1.2vw, 1.125rem);
     line-height: 1.7;
 }
 
-/* Línea de tiempo */
 .timeline {
     width: 100%;
     display: flex;
@@ -53,12 +51,13 @@
 }
 
 .timeline-item {
-    display: grid;
-    grid-template-columns: 140px 1fr;
-    align-items: start;
-    gap: 30px;
     padding: 28px 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.timeline-year {
+    width: 90px;
+    margin-right: 16px;
 }
 
 .timeline-text {
@@ -68,6 +67,7 @@
 }
 
 .timeline-text h4 {
+    margin: 0;
     font-family: 'Cormorant Garamond', serif;
     font-weight: 600;
     font-size: clamp(1.25rem, 2vw, 2rem);
@@ -75,13 +75,18 @@
 }
 
 .timeline-text p {
+    margin: 0;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     font-size: clamp(1rem, 1.2vw, 1.125rem);
     line-height: 1.7;
 }
 
-/* Llamado a la acción */
+.timeline-text span {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(1rem, 1.2vw, 1.125rem);
+}
+
 .about-cta {
     width: 100%;
     display: flex;
@@ -99,16 +104,19 @@
     text-transform: uppercase;
 }
 
-@media (max-width: 900px) {
-    .values-grid {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
+.subtitle span {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(1rem, 1.2vw, 1.125rem);
 }
 
-@media (max-width: 600px) {
-    .timeline-item {
-        grid-template-columns: 90px 1fr;
-        gap: 16px;
+.value-item span {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(1rem, 1.2vw, 1.125rem);
+}
+
+@media (min-width: 601px) {
+    .timeline-year {
+        width: 140px;
+        margin-right: 30px;
     }
 }

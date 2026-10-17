@@ -32,7 +32,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
+    margin: 30px 0;
 }
 
 form{
@@ -76,4 +76,15 @@ form input[type="submit"]{
 
 form input[type="submit"]:hover{
     color:#830000; 
+}
+
+@media (max-width: 768px) {
+    form{
+        flex-direction: column;
+    }
+
+    form input[type="submit"]{
+        width: 100%;
+        max-width: 600px;
+    }
 }

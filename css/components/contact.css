@@ -4,14 +4,14 @@
     justify-content: center;
     align-items: center;
     padding: 50px 0 80px;
+    overflow-x: hidden;
 }
 
+/* Columnas: row + col-lg-5 / col-lg-7 (Bootstrap). Separación: 40px apilado, 60px lado a lado */
 .contact-container {
+    --bs-gutter-y: 40px;
     width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1.4fr;
-    align-items: start;
-    gap: 60px;
+    align-items: flex-start;
 }
 
 .contact-info {
@@ -28,36 +28,34 @@
     gap: 10px;
 }
 
-.contact-block a{
+.contact-block a {
     color: #000;
 }
 
+/* El form global es flex en fila: aquí lo forzamos a columna */
 .contact-form {
+    display: flex;
     flex-direction: column;
     align-items: stretch;
     justify-content: flex-start;
-    gap: 22px;
+    gap: 0;
 }
 
-.contact-field {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+.contact-form input[type="submit"] {
+    align-self: flex-start;
 }
 
-.contact-field label {
+/* Formulario de Bootstrap (form-label, form-control, form-select) con tu estilo */
+.contact-form .form-label {
+    margin-bottom: 8px;
     font-family: 'Cormorant Garamond', serif;
     font-weight: 600;
     font-size: clamp(1.125rem, 1.5vw, 1.5rem);
     text-transform: uppercase;
 }
 
-.contact-form input:not([type="submit"]),
-.contact-form select,
-.contact-form textarea {
-    width: 100%;
-    max-width: none;
-    box-sizing: border-box;
+.contact-form .form-control,
+.contact-form .form-select {
     border: 1px solid black;
     border-radius: 0;
     background-color: #fff;
@@ -65,28 +63,51 @@
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     font-size: clamp(1rem, 1.2vw, 1.125rem);
-    text-indent: 0;
+    box-shadow: none;
 }
 
-.contact-form input:not([type="submit"]),
-.contact-form select {
+.contact-form .form-control,
+.contact-form .form-select {
+    width: 100%;
+    max-width: none;
+    box-sizing: border-box;
     height: 48px;
     padding: 0 20px;
 }
 
-.contact-form textarea {
+.contact-form textarea.form-control {
+    height: auto;
     min-height: 160px;
     padding: 14px 20px;
-    resize: vertical;
+    resize: none;
 }
 
-.contact-form :focus-visible {
+.contact-form .form-control:focus,
+.contact-form .form-select:focus {
+    border-color: black;
     outline: 2px solid #830000;
     outline-offset: 2px;
+    box-shadow: none;
 }
 
-.contact-form input[type="submit"] {
-    align-self: flex-start;
+/* Validación: sin palomita verde; en error, borde y mensaje en tu rojo */
+.contact-form.was-validated .form-control:valid,
+.contact-form.was-validated .form-select:valid {
+    border-color: black;
+    background-image: none;
+    padding-right: 20px;
+}
+
+.contact-form.was-validated .form-control:invalid {
+    border-color: #830000;
+    background-image: none;
+    padding-right: 20px;
+}
+
+.contact-form .invalid-feedback {
+    color: #830000;
+    font-family: 'Lato', sans-serif;
+    font-size: clamp(0.9rem, 1vw, 1rem);
 }
 
 .contact-form input[type="submit"]:disabled {
@@ -95,6 +116,7 @@
 }
 
 .contact-status {
+    margin: 0;
     min-height: 1.7em;
     font-family: 'Lato', sans-serif;
     font-size: clamp(1rem, 1.2vw, 1.125rem);
@@ -104,9 +126,8 @@
     color: #830000;
 }
 
-@media (max-width: 900px) {
-    .contact-container {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
+/* Lado a lado desde 992px: 60px entre columnas, sin separación vertical */
+@media (min-width: 992px) {
+    .contact-container { --bs-gutter-y: 0; }
+    .contact-form { padding-left: 60px; }
 }

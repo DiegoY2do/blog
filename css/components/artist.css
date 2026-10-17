@@ -1,7 +1,7 @@
 .artist {
     width: 100%;
     padding: 100px 0;
-    overflow: hidden;
+    overflow: hidden !important;
 }
 
 .artist-gallery {
@@ -49,7 +49,6 @@
     object-fit: cover;
 }
 
-/* Movimiento continuo */
 @keyframes moveLeft {
     from {
         transform: translateX(0);

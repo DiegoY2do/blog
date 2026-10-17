@@ -29,7 +29,14 @@
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  font-family: 'Montserrat', sans-serif; font-weight: 800; text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif; 
+  font-weight: 800; 
+  text-transform: uppercase;
+}
+
+.header .logo h2{
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(1.2rem, 2vw, 1.8rem);
 }
 
 .header-panel {
@@ -133,7 +140,7 @@
     top: 100%;
     left: 0;
     width: 100%;
-    height: 100dvh;
+    height: 100vh;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -142,7 +149,6 @@
     gap: 30px;
     padding: 30px 1.25rem 40px;
     background: #000;
-    max-height: calc(100dvh - 80px);
     overflow-y: auto;
     opacity: 0;
     visibility: hidden;
@@ -182,5 +188,12 @@
 
   .header.is-open .header-toggle span:nth-child(3) {
     transform: translateY(-10px) rotate(-45deg);
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-text {
+      align-items: center !important;
+      text-align: center;
   }
 }
